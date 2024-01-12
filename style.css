@@ -27,6 +27,12 @@ p {
   line-height: 26px;
 }
 
+img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+
 h1 {
   color: #131313;
   text-align: center;
@@ -111,11 +117,6 @@ header {
  text-align: center;
 }
 
-
-.banner .banner-content .banner-image img {
-  width: 100%;
-}
-
 /* Header section ends here */
 
 /* Features section starts here */
@@ -142,6 +143,7 @@ header {
   font-size: 45px;
   font-weight: 500;
 }
+
 .feature-section .feature-text h2 .features {
   color: #ff900e;
   font-size: 45px;
@@ -154,10 +156,6 @@ header {
     grid-template-columns: repeat(2,1fr);
 }
 
-.feature-section .feature-image img{
-    width: 100%;
-    border-radius: 8px;
-}
 
 
 /* Features section ends here */
