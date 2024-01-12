@@ -21,17 +21,16 @@
 
 p {
   color: #727272;
-  /* text-align: center; */
   font-size: 12px;
   font-weight: 400;
   line-height: 26px;
 }
 
-img{
-    width: 100%;
-    border-radius: 8px;
+img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
 }
-
 
 h1 {
   color: #131313;
@@ -68,12 +67,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 50px 0; */
   width: 100%;
 }
 
 .banner .nav ul {
-  width: 360px;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -81,15 +79,13 @@ header {
 
 .banner .nav h2 {
   color: #131313;
-  /* text-align: center; */
   font-size: 38px;
   font-weight: 700;
 }
 
 .banner .nav ul li a {
   color: #424242;
-  /* text-align: center; */
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 26px;
 }
@@ -102,7 +98,7 @@ header {
 }
 
 .banner .banner-content .banner-text {
-  width: 655px;
+  width: 46%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,8 +109,8 @@ header {
   margin-bottom: 35px;
 }
 
-.banner .banner-content .banner-text p{
- text-align: center;
+.banner .banner-content .banner-text p {
+  text-align: center;
 }
 
 /* Header section ends here */
@@ -127,35 +123,116 @@ header {
 }
 
 .feature-section .feature-text {
-  width: 500px;
+  width: 35%;
 }
 
-.feature-section .feature-text *{
+.feature-section .feature-text * {
   margin-bottom: 20px;
-}
-
-.feature-section .feature-text h2{
-    font-size: 45px;
 }
 
 .feature-section .feature-text h2 .quick-list {
   color: #727272;
-  font-size: 45px;
   font-weight: 500;
 }
 
 .feature-section .feature-text h2 .features {
   color: #ff900e;
-  font-size: 45px;
   font-weight: 700;
 }
 
-.feature-section .feature-image{
-    display: grid;
-    gap: 24px;
-    grid-template-columns: repeat(2,1fr);
+.feature-section .feature-image {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Features section ends here */
+
+
+
+/* Responsive design */
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+  .container {
+    width: 90%;
+  }
+
+   button {
+  width: 120px;
+  height: 47px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+  .feature-section .feature-text {
+    width: 50%;
+  }
+
+  .banner .nav, .nav ul {
+    flex-direction: column;
+  }
+
+  .banner .nav h2{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+
+
+  .feature-section {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+
+  img{
+    border-radius: 0;
+  }
+
+  button {
+  width: 100px;
+  height: 44px;
+  font-size: 12px;
+  border-radius: 4px;
 }
 
 
+  .banner .nav,.banner .nav ul {
+    flex-direction: column;
+  }
 
-/* Features section ends here */
+  .banner .nav h2,
+  ul {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+    .nav ul li{
+    margin-bottom: 5px;
+  }
+
+  .nav ul li:hover{
+    border-bottom: 1px solid gray;
+    width: 100%;
+
+  }
+
+  .feature-section {
+    flex-direction: column-reverse;
+  }
+
+  .feature-section .feature-text {
+    width: 50%;
+  }
+
+  h1,
+  h2 {
+    font-size: 24px;
+  }
+}
