@@ -21,7 +21,7 @@
 
 p {
   color: #727272;
-  text-align: center;
+  /* text-align: center; */
   font-size: 12px;
   font-weight: 400;
   line-height: 26px;
@@ -35,7 +35,6 @@ h1 {
 }
 
 button {
-
   width: 180px;
   height: 64px;
   color: #fff;
@@ -108,9 +107,57 @@ header {
   margin-bottom: 35px;
 }
 
-.banner .banner-content .banner-image img{
-    width: 100%;
+.banner .banner-content .banner-text p{
+ text-align: center;
+}
 
+
+.banner .banner-content .banner-image img {
+  width: 100%;
 }
 
 /* Header section ends here */
+
+/* Features section starts here */
+.feature-section {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.feature-section .feature-text {
+  width: 500px;
+}
+
+.feature-section .feature-text *{
+  margin-bottom: 20px;
+}
+
+.feature-section .feature-text h2{
+    font-size: 45px;
+}
+
+.feature-section .feature-text h2 .quick-list {
+  color: #727272;
+  font-size: 45px;
+  font-weight: 500;
+}
+.feature-section .feature-text h2 .features {
+  color: #ff900e;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.feature-section .feature-image{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.feature-section .feature-image img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/* Features section ends here */
